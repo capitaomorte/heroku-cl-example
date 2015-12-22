@@ -18,9 +18,6 @@ Next, create your own Heroku application using CL Buildpack:
     heroku create -s cedar --buildpack http://github.com/jsmpereira/heroku-buildpack-cl.git
 
 ```shell
-# Enable config vars at build time http://devcenter.heroku.com/articles/labs-user-env-compile 
-heroku labs:enable user-env-compile -a myapp
-
 # Choose implementation:
 heroku config:add CL_IMPL=sbcl
 # or
